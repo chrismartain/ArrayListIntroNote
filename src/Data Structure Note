@@ -22,7 +22,8 @@ or more suitable for some particular tasks
    - Stack
    - Set
    - Binary tree
-
+ We Will start our exercise by explaining and implementing a list first
+ And we then move to the implementation of a Queue.
     INTRODUCTION TO LINKED LIST
 
     - A linked list is a sequence of items which are not fully independent
@@ -50,6 +51,9 @@ or more suitable for some particular tasks
                                                                                           "7785657L"      |
                                                                                               3           |
                                                                                             Node Next-----|
+
+
+
        As we can see in the Illustration above the nodes in the sequence have
        common attribute, and they all contain the variable next which point to the
        location of the following corresponding item in the computer's memory and the
@@ -68,10 +72,25 @@ or more suitable for some particular tasks
                     The List class has methods to:
                     - Find a node in the List, for which we need to supply the student name
                     - Add a new node at the beginning of the List
+             More Explanation:
+                   addToList()
+                   - This method is going to take a node as parameter
+                   - If the head is null - our List is empty -, we will make the 'head' of the
+                   list equal to the new Node
+                   - if the List is not empty, we will put this new Node at the beginning, by making the new
+                    Node the head of the List, and making it point to the next Node in the List
+              Note: attToList()/Application:
 
-    List are by an Essential part of java and must be studied thoroughly to understood properly
-     or you might endup making serious mistakes in your career of software developement. We continue with more explanation
-     nextweek.
- // To be deleted: More change to come
+              void addToList(){
+              //If the head is null, set the head to be the new node
+              if(head == null){
+                 head = newOne;
+                }
+                // Else, make the new node "point" to the head
+                newOne.setNext(head);
+                //And make the new head of the List be the new node
+                head = newOne;
+                }
+              }
 
 
