@@ -93,4 +93,28 @@ or more suitable for some particular tasks
                 }
               }
 
+         LinkedList Implementation continued.:
 
+
+                    find(String name)
+
+                    void find(String name){
+                            //create a marker Node
+                         Node marker = head;
+                            //while it is not null
+                         while(marker !=null){
+                            //See if the marker Node's name equals
+                            //what we're looking for
+                         if(marker.getName().equals(name)){
+                            //if it does, print the Node's details out
+                         System.out.println(marker.getName());
+                         System.out.println(marker.getMatricNumber());
+                         System.out.println(marker.getStudyYear());
+                        }
+                        marker.getNext();
+                      }
+                   }
+
+        IMPLEMENTING THE CONTROLLER CLASS.
+
+        The controller class will have a list(Student list)
